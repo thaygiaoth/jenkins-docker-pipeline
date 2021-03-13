@@ -1,4 +1,4 @@
-FROM openjdk:17-oraclelinux8
+FROM openjdk:8u282-slim-buster 
 COPY src/*.java /usr/src/
 WORKDIR /usr/src
 RUN javac -d . *.java
