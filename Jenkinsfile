@@ -15,10 +15,5 @@ pipeline {
 	  }
 	}
       }    
-      stage('run') {
-        steps {
-          sh 'java -jar /usr/src/rectangle.jar 7 9'
-        }
-      }
     }
 }
