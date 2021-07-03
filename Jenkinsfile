@@ -1,6 +1,6 @@
 pipeline {	
 	
-  agent { dockerfile true }	
+  agent any	
 	
     stages {  
       stage('Cloning our Git') {
