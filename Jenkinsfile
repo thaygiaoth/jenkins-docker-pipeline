@@ -13,7 +13,7 @@ pipeline {
       stage('Building our image') {
 	steps {
           script {
-            dockerImage = docker.build 'java-image:1.0'
+            dockerImage = docker.build 'java-image:1.0' 'java-image:latest'
 	  }
 	}
       } 
