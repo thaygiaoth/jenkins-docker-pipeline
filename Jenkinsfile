@@ -4,10 +4,8 @@ pipeline {
     def myImg
     
     stage ("Build image") {
-    
-	    // lấy code về = git clone
+	// lấy code về = git clone
         git 'https://github.com/thaygiaoth/jenkins-docker-pipeline.git'
-
         // build cục image
         myImg = docker.build 'java-container:1.0'
     }
